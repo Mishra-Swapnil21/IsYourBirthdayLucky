@@ -1,13 +1,92 @@
 :root {
-    --primaryaquamarine : #7FFFD4;
+    --primary-deep-sky-blue : #00BFFF;
     --primaryblack : #000000;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body{
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
 background-color: var(--primaryblack);
 }
 
 .container {
-    background-color: var(--primaryaquamarine);
+    background-color: var(--primary-deep-sky-blue);
     color: black;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem;
+    border-radius: 2rem;
+    text-align: center;
 }
+
+#birth-date {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+#lucky-number {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.3rem;
+    text-align: center;
+}
+
+#check-button {
+    width: 15%;
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    background-color: transparent;
+    border-width: 2px;
+}
+
+#output {
+    margin: 2rem;
+    border-color: black;
+    border-style:dotted;
+    background-color: white;
+    padding: 2rem;
+}
+
+footer {
+    background-color: var(--primary-deep-sky-blue);
+    margin-top: 20%;
+    margin-bottom: 0% ;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.footer-header {
+    text-align: center;
+    padding: 1rem;
+    font-size: larger;
+    font-weight:700;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 1rem;
+    
+}
+
+.link {
+    list-style-type:none;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+    padding: 0.5rem;
+    }
