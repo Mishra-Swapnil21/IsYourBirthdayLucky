@@ -56,7 +56,7 @@ background-color: var(--primaryblack);
 #output {
     margin: 2rem;
     border-color: black;
-    border-style:dotted;
+    border-style:dashed;
     background-color: AliceBlue;
     padding: 2rem;
 }
