@@ -5,8 +5,18 @@ const errorMessage = document.querySelector("#error-message");
 const output = document.querySelector("#output");
 
 
-checkButton.addEventListener('click' , checkNumberIsLucky);
-
+checkButton.addEventListener('click' , function validateLuckyNumberAndBirthDate(){
+    
+if(birthDate.value != "" ) {
+    if(luckyNumber.value != "" ) {
+        if(luckyNumber>0){
+            checkNumberIsLucky()
+        }else {output.innerText = "error :- Invalid Lucky Number";}
+    } else {output.innerHTML = "Error :- Lucky Number Field should be not empty";}
+} else {output.innerText = "Error :- Date of Birth field should be not empty";}
+});   
+    
+    
 function compareValues(sum,luckyNumber){
     if(sum%luckyNumber===0){
         output.innerText = "Your Birthday is Lucky 🥳🥳";
