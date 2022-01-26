@@ -1,0 +1,13 @@
+:root {
+    --primaryaquamarine : #7FFFD4;
+    --primaryblack : #000000;
+}
+
+body{
+background-color: var(--primaryblack);
+}
+
+.container {
+    background-color: var(--primaryaquamarine);
+    color: whitesmoke;
+}
