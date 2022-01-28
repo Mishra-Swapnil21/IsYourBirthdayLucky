@@ -12,7 +12,7 @@ checkButton.addEventListener('click' , function validateLuckyNumberAndBirthDate(
                 checkNumberIsLucky()
             }else {output.innerText = "Error :- Lucky Number is Invalid"}
 
-        }else {output.innerHTML = "Error :- Lucky Number field should not be empty"}
+        }else {output.innerText = "Error :- Lucky Number field should not be empty"}
 
     }else {output.innerText = "Error :- Date of Birth field should not be empty"}
 
